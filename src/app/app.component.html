@@ -1,0 +1,18 @@
+<section>
+  <header>
+    <h1>FORM BUILDER</h1>
+  </header>
+  <div class="form-options">
+    <button (click)="selectInput()">INPUT</button>
+    <button (click)="selectRadio()">RADIO</button>
+    <button (click)="selectCheckbox()">CHECKBOX</button>
+    <button (click)="selectSelect()">SELECT</button>
+  </div>
+  <div>
+     <app-input *ngIf="inputSelected"></app-input>
+     <app-radio *ngIf="radioSelected"></app-radio>
+     <app-checkbox *ngIf="checkboxSelected"></app-checkbox>
+     <app-select *ngIf="selectSelected"></app-select>
+  </div>
+</section>
+
